@@ -1,9 +1,6 @@
 $(document).ready(function() {
   $("#run").submit(function(event) {
-
-//True false question to verify human
-    var xxx = xxx;
-
+    event.preventDefault();
 
     var answer1 = $("#answerOne").val();
     var answer2 = $("#answerTwo").val();
@@ -13,70 +10,70 @@ $(document).ready(function() {
 
     var determination = function() {
       if ((answer1 == 0) || (answer2 == 0) || (answer3 == 0)) {
-        return "Please answer all questions to determine results";
+        return 0;
       }
 
 //Answers 1xx
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 1) && (answer3 == 1)) {
+        return 1;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 1) && (answer3 == 2)) {
+        return 2;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 1) && (answer3 == 3)) {
+        return 4;
       }
 
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 2) && (answer3 == 1)) {
+        return 1;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 2) && (answer3 == 2)) {
+        return 1;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 1) && (answer2 == 2) && (answer3 == 3)) {
+        return 1;
       }
 
 //Answers 2xx
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 1) && (answer3 == 1)) {
+        return 3;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 1) && (answer3 == 2)) {
+        return 2;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 1) && (answer3 == 3)) {
+        return 3;
       }
 
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 2) && (answer3 == 1)) {
+        return 1;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 2) && (answer3 == 2)) {
+        return 2;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 2) && (answer2 == 2) && (answer3 == 3)) {
+        return 1;
       }
 
 //Answers 3xx
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 1) && (answer3 == 1)) {
+        return 3;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 1) && (answer3 == 2)) {
+        return 2;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 1) && (answer3 == 3)) {
+        return 5;
       }
 
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 2) && (answer3 == 1)) {
+        return 1;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 2) && (answer3 == 2)) {
+        return 2;
       }
-      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
-        return "yyyyy";
+      else if ((answer1 == 3) && (answer2 == 2) && (answer3 == 3)) {
+        return 1;
       }
 
 //Error message
@@ -85,10 +82,36 @@ $(document).ready(function() {
       }
     };
 
+    var codeType = determination();
 
 
-    var result = determination();
-    alert(result);
-    event.preventDefault();
+
+
+    if (codeType === 0){
+      alert("Please answer all questions to recieve an answer");
+    }
+    else if (codeType == 1) {
+      $("#css-img").fadeIn();
+    }
+    else if (codeType == 2) {
+      $("#ruby-img").fadeIn();
+    }
+    else if (codeType == 3) {
+      $("#csharp-img").fadeIn();
+    }
+    else if (codeType == 4) {
+      $("#java-img").fadeIn();
+    }
+    else if (codeType == 5) {
+      $("#php-img").fadeIn();
+    }
+    else {
+      alert("error");
+    }
+
+
+
+
+
   });
 });

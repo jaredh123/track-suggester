@@ -3,16 +3,14 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-    <scripts src="js/jquery.3.3.1.js"></scripts>
-    <scripts src="js/script.js"></scripts>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
   </head>
   <div class="container">
     <body>
-
-      <h1>Track Suggester</h1>
-
-
+      <form id="run">
+        <h1>Track Suggester</h1>
         <ol>
           <li>Do you like making pretty things?</li>
             <select class="form-control" id="answerOne">
@@ -29,7 +27,7 @@
               <option value="2">No</option>
             </select>
 
-          <li>How are your organizational skills?:</li>
+          <li>How are your organizational skills?</li>
             <select class="form-control" id="answerThree">
               <option value="0">--Select--</option>
               <option value="1">Perfect</option>
@@ -53,8 +51,13 @@
               <option value="3">Why are you asking this?</option>
             </select>
         </ol>
-
-
+        <button type="submit" class="btn btn-success">Submit my answers</button>
+        <img src="img/css.png" alt="You should try CSS image" id="css-img">
+        <img src="img/ruby.png" alt="You should try Ruby image" id="ruby-img">
+        <img src="img/csharp.png" alt="You should try C# image" id="csharp-img">
+        <img src="img/java.png" alt="You should try JavaScript image" id="java-img">
+        <img src="img/php.png" alt="You should try PHP image" id="php-img">
+      </form>
     </body>
   </div>
 </html>
