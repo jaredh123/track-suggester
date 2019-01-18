@@ -12,32 +12,79 @@ $(document).ready(function() {
     var answer5 = $("#answerFive").val();
 
     var determination = function() {
-      if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
-      }
-      else if (xxx) {
-        return xxx;
+      if ((answer1 == 0) || (answer2 == 0) || (answer3 == 0)) {
+        return "Please answer all questions to determine results";
       }
 
+//Answers 1xx
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+//Answers 2xx
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+//Answers 3xx
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+      else if ((answer1 == xxxxx) && (answer2 == xxxxx) && (answer3 == xxxxx)) {
+        return "yyyyy";
+      }
+
+//Error message
       else {
-        return "Error";
+        return "error";
       }
     };
+
 
 
     var result = determination();
