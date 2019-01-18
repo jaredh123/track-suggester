@@ -9,7 +9,7 @@ $(document).ready(function() {
     var answer5 = $("#answerFive").val();
 
     var determination = function() {
-      if ((answer1 == 0) || (answer2 == 0) || (answer3 == 0)) {
+      if ((answer1 == 0) || (answer2 == 0) || (answer3 == 0) || (answer4 == 0) || (answer5 == 0)) {
         return 0;
       }
 
@@ -108,9 +108,14 @@ $(document).ready(function() {
     else {
       alert("error");
     }
-
-
-
+  });
+  $("#clear").submit(function(event) {
+    event.preventDefault();
+    $("#ruby-img").fadeOut();
+    $("#csharp-img").fadeOut();
+    $("#java-img").fadeOut();
+    $("#css-img").fadeOut();
+    $("#php-img").fadeOut();
 
 
   });
