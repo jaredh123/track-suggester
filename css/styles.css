@@ -3,6 +3,10 @@ h1 {
   margin-bottom: 50px;
 }
 
+.box {
+  color: blue;
+}
+
 li {
   margin-top: 20px;
 }
@@ -14,4 +18,8 @@ img {
 
 form {
   margin-bottom: 30px;
+}
+
+body {
+  background-color: lightgray;
 }
